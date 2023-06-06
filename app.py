@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 
 app = Flask(__name__)
 
