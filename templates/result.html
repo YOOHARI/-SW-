@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Summarization Tool</title>
+  </head>
+  <body>
+    <h1>Summary</h1>
+    <p>{{ summary }}</p>
+    <button id="copy-button">Copy</button>
+    <script>
+      var copyButton = document.getElementById("copy-button");
+      copyButton.addEventListener("click", function() {
+        var summary = document.querySelector("p").textContent;
+        navigator.clipboard.writeText(summary);
+        alert("Copied to clipboard!");
+      });
+    </script>
+    <br /><br />
+    <a href="/">Home</a>
+  </body>
+</html>
