@@ -57,7 +57,7 @@ def generate_answer(question, context):
     answer = response.choices[0].text
     return answer
 ```      
-*  read_pdf(file) : file객체를 입력으로 받아 pyPDF2라이브러리를 사용하여 PDF에서 텍스트내용을 읽어와 메    서드를 사용하여 텍스트 추출
+*  read_pdf(file) : file객체를 입력으로 받아 pyPDF2라이브러리를 사용하여 PDF에서 텍스트내용을 읽어와 메서드를 사용하여 텍스트 추출
 ```python
 def read_pdf(file):
     pdf = PdfReader(file)
