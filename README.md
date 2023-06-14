@@ -66,13 +66,13 @@ def read_pdf(file):
         text += page.extract_text()
     return text
 ```    
-*  read_text_file(file) : file객체(txt파일)을 입력으로 받아 메세드를사용하여 UTF-8 인코딩 된 텍스트로 내용을     읽어와 디코딩된 텍스트를 반환
+*  read_text_file(file) : file객체(txt파일)을 입력으로 받아 메세드를사용하여 UTF-8 인코딩 된 텍스트로 내용을 읽어와 디코딩된 텍스트를 반환
 ```python
 def read_text_file(file):
     text = file.read().decode("utf-8")
     return text
 ```
-*  get_summary() : 문서를요약하는 POST 요청을 처리, 입력된 문서(직접입력 or파일 업로드)를 가져오고 문서    의 종류(pdf or txt)를 결정된 후 적절한 함수를 호출하여 요약을 생성
+*  get_summary() : 문서를요약하는 POST 요청을 처리, 입력된 문서(직접입력 or파일 업로드)를 가져오고 문서의 종류(pdf or txt)를 결정된 후 적절한 함수를 호출하여 요약을 생성
 ```python
 def get_summary():
     document = request.form.get("document")
@@ -103,5 +103,3 @@ def get_summary_url():
     summary = summarize_url(url)
     return render_template("result_url.html", summary=summary, url=url)
 ```
-### 프로그램 사용법
-
