@@ -7,6 +7,7 @@
 ### 개발 언어
 *  Back-end : Python
 *  Front-end : Html CSS Javascript
+*  Server : Flask
 ### 상세 설계
 *  summarize(document) : document를 입력으로 받아 OpenAI의 text-davinci-002 모델을 사용하여 문서의 간결한 요약을 생성
 ```python
